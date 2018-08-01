@@ -6,7 +6,7 @@
 /*   By: yandriie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/24 11:37:36 by yandriie          #+#    #+#             */
-/*   Updated: 2017/10/24 20:50:57 by yandriie         ###   ########.fr       */
+/*   Updated: 2018/07/31 09:37:21 by yandriie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ int		*ft_range(int min, int max)
 
 	if (min >= max)
 		return (NULL);
-	res = NULL;
-	res = (int *)malloc((max - min + 1) * sizeof(*res));
+	res = (int *)malloc((max - min) * sizeof(*res));
 	if (res == NULL)
 		return (NULL);
 	i = -1;
